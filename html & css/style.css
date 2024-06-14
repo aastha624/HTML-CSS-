@@ -1,0 +1,26 @@
+h3{
+    color: blueviolet;
+} 
+p{
+    color: aqua;
+}
+a{
+    color: pink;
+}
+li{
+    list-style-type:square ;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+}
+
+.percent{
+    font-size: 20px;
+}
+.em{
+    font-size: 1em;
+}
+.rem{
+    font-size: 1rem;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey form</title>
+    <style>
+        input, select {
+    border-radius: 5px;
+}
+        input, select {
+    width: 100%;
+    margin: 0.1em 0 1em 0;
+    min-height: 2em;
+    font-size: 0.67em;
+} 
+input[type="text" i] {
+    padding: 1px 2px;
+}
+input {
+    writing-mode: horizontal-tb !important;
+    font-style: italic;
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(129, 127, 127), rgb(133, 133, 133));
+    border-image: initial;
+}
+label {
+    cursor: default;
+}
+form {
+    background-color: rgba(238, 242, 13, 0.9);
+    color: rgb(168, 15, 20);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(83, 8, 32);
+    width: 60vw;
+    max-width: 600px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 15px 15px 25px 15px;
+}
+body {
+    background-image: url(nature.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    color: rgb(245, 255, 250);
+    font-family: Perpetua;
+    font-size: 30px;
+}
+
+
+    </style>
+</head>
+<body>
+    <form>
+    <h1>fill this survey form</h1>
+    <p>thank you for taking the time to help us taking the platform</p>
+    <fieldset>
+    <label id="name-label">
+     Name 
+     <fieldset>
+     <input id="name" type="text" placeholder="enter your name" required>
+    </fieldset>
+    </label>
+
+    <label id="email-label">
+     Email
+     <fieldset>
+     <input id="email" type="email" placeholder="enter your email" required>
+    </fieldset>
+    </label>
+    <label id="number-label">
+        Age
+        <small>(optional)</small>
+        <fieldset>
+        <input id="number" type="number" min="10" max="99" placeholder="age">
+    </fieldset>
+    </label>
+</fieldset>
+<fieldset>
+    <label>
+        <fieldset>
+    which option best your current role
+</fieldset>
+    <select id="dropdown">
+        <option value="">Select current role</option>
+        <option value="1">Student</option>
+        <option value="2">Full Time Job</option>
+        <option value="3">Full Time Learner</option>
+        <option value="4">aasistant</option>
+        <option value="5">Prefer not to say</option>
+        <option value="6">Other</option>
+    </select>
+</label>
+</fieldset>
+<fieldset>
+<label> Would you recommend to a friend ?</label>
+<fieldset><label><input type="radio" class="inline" name="attribute" value="1" checked=""> Definitely</label></fieldset>
+<fieldset><label><input type="radio" class="inline" name="attribute" value="2"> Maybe</label></fieldset>
+<fieldset><label><input type="radio" class="inline" name="attribute" value="3"> Not sure</label></fieldset>
+</fieldset>
+<fieldset>
+<label><fieldset> How would you describe yourself as a customer ?</fieldset>
+    <select id="dropdown2">
+        <option value="">Select an option</option>
+        <option value="1">Beginner</option>
+        <option value="2">Having Basic INFO.</option>
+        <option value="3">Expert in Coding</option>
+        <option value="4">Other</option>
+    </select>
+</label>  
+</fieldset>  
+    <fieldset>
+  
+<label>What Improvement You Want ? <small>(Check all that apply)</small> </label>
+<fieldset><label><input type="checkbox" class="inline" value="front-end-projects"> Front-end Projects</label></fieldset>
+<fieldset><label><input type="checkbox" class="inline" value="back-end-projects"> Back-end Projects</label></fieldset>
+<fieldset><label><input type="checkbox" class="inline" value="back-end-projects"> Back-end Projects</label></fieldset>
+<fieldset><label><input type="checkbox" class="inline" value="html-css-js"> HTML &amp; CSS &amp; JS</label></fieldset>
+<fieldset><label><input type="checkbox" class="inline" value="new-challenges"> New Challenges</label></fieldset>
+<fieldset><label> Write Your Suggestion Here :
+    <textarea rows="4" cols="40" placeholder="Write Comments Here....."></textarea>
+</label>
+</fieldset>
+
+
+<fieldset>
+    <input type="submit" value="Submit" id="submit">
+</fieldset>
+
+ </form>
+</body>
+</html>

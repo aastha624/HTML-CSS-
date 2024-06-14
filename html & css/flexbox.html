@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            padding: 0 20px 30px 0;
+            line-height: 1.4;
+        } 
+        .flex-container{
+            display: flex;
+            /* flex-direction: column-reverse; */
+            /* flex-wrap: wrap;  || aa vaparata winodws minimize karta box niche jase and nowrap vaparata boxes nana thata jase */
+            width: 100%;
+            height: 500px;
+            /* align-content: center;   ||space na aave boxes vache */
+            align-content: space-around;
+            flex-flow: row wrap;
+        }
+        .flex-item{
+            width: 75px;
+            height: 75px;
+            background-color: aqua;
+            border: 2px solid fuchsia;
+            text-align: center;
+            font-size: 2em;
+            color: brown;
+            font-weight: bold;
+            font-style: italic;
+            line-height: 1.4 ;
+        }
+        #flex-item-1{
+            /* flex-basis: 200px;  || ahi 1 box motu thay */
+             /* flex-grow: 2;   || 2x ni speed ae cover kare relatively alag alag boxes ne size karava use thay */
+           /* flex-shrink: 2;   ||aa vaparati vakhate flex wrap ne khasedavanu hoy aa boxes ne nana kare */
+           background-color: blueviolet;
+           /* align-self: center; */
+           /* flex: 3 2 250px;  ||shorthand property */
+        }
+        #flex-item-2{
+            background-color: rgb(214, 226, 43);
+            /* flex-shrink: 3; */
+            /* flex-grow: 3; */
+        }
+        #flex-item-3{
+            background-color: rgb(43, 226, 174);
+            /* order: 10 ;  ||jetalo moto order aetalo pachad element dekhay */
+        }
+        #flex-item-4{
+            background-color: rgb(43, 226, 83);
+        }
+        #flex-item-5{
+            background-color: rgb(226, 153, 43);
+        }
+        #flex-item-6{
+            background-color: rgb(70, 43, 226);
+        }
+        #flex-item-7{
+            background-color: rgb(43, 174, 226);
+        }
+        #flex-item-8{
+            background-color: rgb(226, 43, 58);
+        }
+        #flex-item-9{
+            background-color: rgb(124, 194, 11);
+        }
+        #flex-item-10{
+            background-color: rgb(162, 31, 206);
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item" id="flex-item-1">1</div>
+        <div class="flex-item" id="flex-item-2">2</div>
+        <div class="flex-item" id="flex-item-3">3</div>
+        <div class="flex-item" id="flex-item-4">4</div>
+        <div class="flex-item" id="flex-item-5">5</div>
+        <div class="flex-item" id="flex-item-6">6</div>
+        <div class="flex-item" id="flex-item-7">7</div>
+        <div class="flex-item" id="flex-item-8">8</div>
+        <div class="flex-item" id="flex-item-9">9</div>
+        <div class="flex-item" id="flex-item-10">10</div>
+    </div>
+</body>
+</html>
